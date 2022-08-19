@@ -1,3 +1,87 @@
 .App {
   text-align: center;
 }
+
+body {
+  background-image: url("./images/background.png");
+  box-sizing: border-box;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  border-bottom: 3px solid white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-planetas {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+h2 {
+  border-bottom: 3px solid white;
+  border-radius: 30px;
+}
+
+.container-planetas {
+  display: flex;
+}
+
+.planet-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.planet-card img {
+  max-width: 100%;
+  -webkit-moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.planet-card:hover img {
+  -webkit-moz-transform: scale(1.1);
+  transform: scale(1.3);
+}
+
+.titulo-missoes {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  width: 100%;
+}
+
+.container-missions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-cada-missao {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.mission-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  margin: 1%;
+  padding: 1%;
+  width: 20%;
+}
+
+.mission-card p {
+  color: white;
+  margin: 2%;
+}
